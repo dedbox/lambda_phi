@@ -46,7 +46,7 @@ let exp : exp arbitrary =
 
 let parse_print_id (e : exp) : bool =
   let e' = Parser.parse (Printer.print e) in
-  e' = Parser.parse (Printer.print e)
+  e' = Parser.parse (Printer.print e')
 
 let test : Test.t = Test.make ~name:"parse_print_id" exp parse_print_id
 
