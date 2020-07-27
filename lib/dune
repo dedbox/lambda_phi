@@ -1,0 +1,9 @@
+
+(library
+ (name lambda_phi)
+ (wrapped false)
+ (libraries angstrom qcheck)
+ (preprocess
+  (pps ppx_inline_test ppx_deriving.eq ppx_deriving.ord ppx_deriving.show
+       ppx_let ppx_variants_conv))
+ (inline_tests))

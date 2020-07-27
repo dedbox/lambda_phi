@@ -1,0 +1,6 @@
+(executable
+ (public_name lambda_phi)
+ (name main)
+ (libraries lambda_phi)
+ (preprocess
+  (pps ppx_inline_test)))
